@@ -16,53 +16,140 @@
 </head>
 <body>
 
-    <header class="d-flex">
+    <header class="d-flex justify-content-between">
         <img id="logo" src="img/almi-logo1-02.svg" alt="">
 
-        <nav id="navbar" class="d-none d-md-flex">
-            <a href="#">Link1</a>
+        <img id="hamburger" class="d-md-none" src="img/menu-bars-02.svg" alt="">
 
-            <div class="dropdown">
-                <a href="#" class="dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown">Link2</a>
-                <div class="dropdown-menu">
-                    <a class="dropdown-item" href="#">Action</a>
-                    <a class="dropdown-item" href="#">Action</a>
-                    <a class="dropdown-item" href="#">Action</a>
+        <!-- <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">Navbar</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Link</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Dropdown
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <li><a class="dropdown-item" href="#">Action</a></li>
+                      <li><a class="dropdown-item" href="#">Another action</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link disabled">Disabled</a>
+                  </li>
+                </ul>
+                
+              </div>
+            </div>
+        </nav> -->
+
+        <nav id="navbar" class="d-none">
+            <!-- <a href="#">Hem</a> -->
+
+            <!-- <div class="dropdown">
+                <a href="#" class="dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown">Våra tjänster</a>
+                <div class="dropdown-menu my-0 py-0">
+                    <a class="dropdown-item" href="#">Vill du växa?</a>
+                    <a class="dropdown-item" href="#">Tjänster</a>
+                    <a class="dropdown-item" href="#">Seminarier</a>
+                </div>
+            </div> -->
+
+            <div>
+                <a class="a-services" href="#">Våra tjänster</a> 
+                <div class="dropdown-menu-holder1 d-none">
+                    <a href="#">Vill du växa?</a>
+                    <a href="#">Tjänster</a>
+                    <a href="#">Seminarier</a>
                 </div>
             </div>
             
-            <a href="#">Link3</a>
-            <a href="#">Link4</a>
-        </nav>
+            <div>
+                <a class="a-knowledge" href="#">Kunskap & inspiration</a> 
+                <div class="dropdown-menu-holder2 d-none">
+                    <a href="#">Inspiration</a>
+                    <a href="#">Tips & råd</a>
+                    <a href="#">Mallar</a>
+                    <a href="#">Guider</a>
+                    <a href="#">Undersökningar</a>
+                </div>
+            </div>
 
-        <img class="d-md-none" src="img/menu-bars-02.svg" alt="">
+            <div>
+                <a class="a-about" href="#">Om Almi</a> 
+                <div class="dropdown-menu-holder3 d-none">
+                    <a href="#">Fakta om Almi</a>
+                    <a href="#">Kontakt</a>
+                </div>
+            </div>
+            
+            <!-- <a class="a-knowledge" href="#">Kunskap & inspiration</a>
+            <div class="dropdown-menu-holder2 d-none d-md-block">
+                <a href="#">Inspiration</a>
+                <a href="#">Tips & råd</a>
+                <a href="#">Mallar</a>
+                <a href="#">Guider</a>
+                <a href="#">Undersökningar</a>
+            </div>
+
+            <a class="a-about" href="#">Om Almi</a>
+            <div class="dropdown-menu-holder3 d-none">
+                <a href="#">Fakta om Almi</a>
+                <a href="#">Kontakt</a>
+            </div> -->
+            
+        </nav>
         <!-- Hamburger icon to toggle whether to show the navigational menu or not -->
         <!-- <i id="bars" class="fas fa-bars" role="button" aria-label="Open menu" tabindex="0"></i> -->
+
+        <!-- ICON TO GET TO TOP OFF PAGE -->
+        <!-- ICONS8.com -->
     </header>
 
     <img id="hero" src="img/hero.jpg" alt="">
 
-    <main class="container">
+    <main>
+
         <section id="intro">
 
             <h1>Hållbara lån med almi</h1>
-            <p>Ta ett uppstartslån med oss på almi - vi hjälper dig att komma igång med ert drömprojekt</p>
+            <p>Ta ett uppstartslån med oss på Almi - vi hjälper ert företag att komma igång med drömprojektet!</p>
             <img src="img/almi-qrew.jpg" alt="">
             
         </section>
 
         <section id="explain">
 
-            <div>
-                <h2>Hur funkar det?</h2> <img src="img/arrow-down-02.svg" alt="">
+            <div class="header-container d-flex justify-content-between align-items-center">
+                <h2>Hur funkar det?</h2>
+                <img class="d-none" src="img/arrow-down-02.svg" alt="">
             </div>
             
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, illum eius. Atque ex amet architecto nihil ea quaerat tempora neque corrupti. Ullam quaerat iste officia culpa esse odit quos minus.</p>
-            <a href="#">+ Mer information om processen</a>
-            <div>
+            <p>Våra exporter analyserar ert företags möjligheter och behov. Processen sker i samarbete med er bank för att kunna ge er en skräddarsydd och säker lösning!</p>
+            <a class="more-info" href="#">+ Mer information om processen</a>
+
+            <div class="lightbox-wrapper">
+                <div class="lightbox">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, odit? Perferendis sint fugit quos autem. Dolores quaerat molestias, necessitatibus velit, tenetur harum sit consectetur, aliquid tempore placeat inventore sint magnam.</p>
+                </div>
+            </div>
+
+            <div class="explain-graphics d-flex-column justify-content-center align-items-center">
                 <p>Strukturanalys</p>
                 <img src="img/almi-plus-02.svg" alt="">
-                <p>Finansanaöys</p>
+                <p>Finansanalys</p>
                 <img src="img/almi-equal-02.svg" alt="">
                 <p>Låneerbjudande</p>
             </div>
@@ -71,14 +158,39 @@
 
         <section id="experience">
 
-            <div>
-                <h2>Vad har vi för erfarenhet</h2> <img src="img/arrow-down-02.svg" alt="">
+            <div class="header-container d-flex justify-content-between align-items-center">
+                <h2>Vad har vi för erfarenhet?</h2> 
+                <img class="d-none" src="img/arrow-down-02.svg" alt="">
             </div>
             
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic perspiciatis, soluta atque officia asperiores debitis suscipit autem aut odit repellendus, ipsa nihil inventore ducimus ad aspernatur incidunt consequatur praesentium? Sequi?</p>
+            <p>Vi är ett statligt ägt företag som under nära 30 års tid har hjälpt hundratals nystartade företag att få en hållbar och framgångsrik struktur</p>
             <a href="#">+ Läs mer om vår historia</a>
             <p>Reportage om några av våra tidigare investeringar: </p>
-            <div>
+            <div class="art-wrapper">
+                <article>
+                    <div class="d-flex justify-content-start align-items-center">
+                        <img src="img/frank.png" alt="">
+                        <h3>Article heading</h3>
+                    </div>
+                    
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, libero deleniti. Mollitia quisquam autem corrupti fuga eligendi repellendus, quas sint! Dignissimos, impedit nisi? Explicabo cum, quod iure laudantium expedita beatae.</p>
+                    
+                    <a href="#">+ Läs hela artiklen</a>
+                </article>
+                
+            </div>
+            <div class="more-articles d-none">
+                <article>
+                    <div class="d-flex justify-content-start align-items-center">
+                        <img src="img/thomas.png" alt="">
+                        <h3>Article heading</h3>
+                    </div>
+
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, libero deleniti. Mollitia quisquam autem corrupti fuga eligendi repellendus, quas sint! Dignissimos, impedit nisi? Explicabo cum, quod iure laudantium expedita beatae.</p>
+
+                    <a href="#">+ Läs hela artiklen</a>
+                </article>
+
                 <article>
                     <h3>Article heading</h3>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, libero deleniti. Mollitia quisquam autem corrupti fuga eligendi repellendus, quas sint! Dignissimos, impedit nisi? Explicabo cum, quod iure laudantium expedita beatae.</p>
@@ -87,71 +199,115 @@
                 <article>
                     <h3>Article heading</h3>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, libero deleniti. Mollitia quisquam autem corrupti fuga eligendi repellendus, quas sint! Dignissimos, impedit nisi? Explicabo cum, quod iure laudantium expedita beatae.</p>
-                    <img src="img/frank.png" alt="">
+                    <img src="img/thomas.png" alt="">
                 </article>
             </div>
-            <button>Se fler artiklar</button>
+            <button class="btn btn-primary prev-art">Förra artikeln</button>
+            <button class="btn btn-primary next-art">Nästa artikel</button>
 
         </section>
 
         <section id="offers">
 
-            <div>
-                <h2>Vilka lån erbjuder vi?</h2> <img src="img/arrow-down-02.svg" alt="">
+            <div class="header-container d-flex justify-content-between align-items-center">
+                <h2>Vilka lån erbjuder vi?</h2>
+                <img class="d-none" src="img/arrow-down-02.svg" alt="">
             </div>
             
             <ul>
                 <li>5% fast ränta på alla lån</li>
                 <li>500 kronor fast amorteringsavgift / månad</li>
-                <li>Alla magasin ingår</li>
+                <li>När du väljer en av våra planer får du fri tillgång till alla våra magasin och nyhetspoddar</li>
             </ul>
-            <div>
-                <a href="#">
-                    <img src="img/almi-hash-02.svg" alt="">
-                    <pre>
-                        10.000 sek
-                        3 månader
-                    </pre>
-                    <button>Välj plan</button>
-                </a>
-                <a href="#">
-                    <img src="img/almi-hash-02.svg" alt="">
-                    <pre>
-                        10.000 sek
-                        3 månader
-                    </pre>
-                    <button>Välj plan</button>
-                </a>
-                <a href="#">
-                    <img src="img/almi-hash-02.svg" alt="">
-                    <pre>
-                        10.000 sek
-                        3 månader
-                    </pre>
-                    <button>Välj plan</button>
-                </a>
+
+            <div class="d-md-flex">
+                <article class="loan-offer">
+                    
+                    <div class="d-flex justify-content-start align-items-center">
+                        <img src="img/almi-hash-02.svg" alt="">
+                        <p>10.000 sek<br>3 månader</p>
+                    </div>
+
+                    <div class="d-flex justify-content-center">
+                        <a class="btn btn-primary" href="#">Välj plan</a>
+                    </div>
+
+                </article>
+                
+                <article class="loan-offer">
+
+                    <div class="d-flex justify-content-start align-items-center">
+                        <img src="img/almi-hash-02.svg" alt="">
+                        <p>25.000 sek<br>6 månader</p>
+                    </div>
+
+                    <div class="d-flex justify-content-center">
+                        <a class="btn btn-primary" href="#">Välj plan</a>
+                    </div>
+
+                </article>
+                
+                <article class="loan-offer">
+
+                    <div class="d-flex justify-content-start align-items-center">
+                        <img src="img/almi-hash-02.svg" alt="">
+                        <p>50.000 sek<br>12 månader</p>
+                    </div>
+
+                    <div class="d-flex justify-content-center">
+                        <a class="btn btn-primary" href="#">Välj plan</a>
+                    </div>
+
+                </article>
+                
             </div>
             
         </section>
 
         <section id="news">
 
-            <div>
-                <h2>Fortfarande osäker?</h2> <img src="img/arrow-down-02.svg" alt="">
+            <div class="header-container d-flex justify-content-between align-items-center">
+                <h2>Fortfarande osäker?</h2>
+                <img class="d-none" src="img/arrow-down-02.svg" alt="">
             </div>
             
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa perspiciatis perferendis, in sunt harum at quod sint saepe animi similique assumenda officia delectus tenetur quaerat praesentium nihil ipsam aspernatur eius.</p>
-            <button>Skapa konto</button>
+            <p>Känner du att du är osäker på vad som passar just ert företag? Behöver ni mer information och rådgivning från våra exporter? Registrera ett konto för fri tillgång till våra magasin, Poddar och möjlighet till samtal med våra exporter för att lära känna oss bättre!</p>
+            
+            <!-- <div class="d-flex justify-content-between">
+                <button class="btn btn-primary">Skapa konto</button>
+                <img class="point-img" src="img/m-point-left.png" alt="">
+            </div> -->
+            
+            <!-- FORM to create acount -->
+
+            <form>
+                <div class="mb-3">
+                  <label for="email" class="form-label">Email:</label>
+                  <input type="email" class="form-control" id="email">
+                </div>
+                <div class="mb-3">
+                  <label for="name" class="form-label">Namn:</label>
+                  <input type="text" class="form-control" id="name">
+                </div>
+                
+                <button type="submit" class="btn btn-primary">Skapa konto</button>
+            </form>
 
         </section>
     </main>
 
-    <footer>
-        <div class="container">
-            <i id="bars" class="fas fa-bars" role="button" aria-label="Open menu"></i>
-            <i id="bars" class="fas fa-bars" role="button" aria-label="Open menu"></i>
-            <i id="bars" class="fas fa-bars" role="button" aria-label="Open menu"></i>
+    <footer class="d-flex justify-content-center align-items-center">
+        
+        <div>
+            <i class="fab fa-facebook"></i>
         </div>
+        <div>
+            <i class="fab fa-twitter"></i>
+        </div>
+        <div>
+            <i class="fab fa-instagram"></i>
+        </div>    
+        
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
