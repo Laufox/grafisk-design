@@ -46,40 +46,43 @@ document.querySelector('.a-about').addEventListener('click', (e) => {
 const articleList = [
     {
         id: 0,
-        imgUrl: `img/frank.png`,
-        heading: `Art-Heading 1`,
-        text: `Article text for the first of the four articles. One one one one one one`,
-        url: `#`
+        imgUrl: `img/frank-a100.png`,
+        heading: `“Jag vill ju rädda världen”`,
+        text: `Johanna Vesterberg från Luleå brinner för miljön. När hon som, möbel- och textildesigner, ville satsa på något eget var valet enkelt: -Jag mår dåligt av de stora företagens slit och släng. 100 miljoner ton möbler slängs varje år. Nu har vi tagit fram en skandinavisk möbel i helt nytt koncept.`,
+        url: `https://www.almi.se/kunskapsbanken/inspiration/normada/`
     },
     {
         id: 1,
-        imgUrl: `img/thomas.png`,
-        heading: `Art-Heading 2`,
-        text: `Article text for the second of the four articles. Two two two two two two`,
-        url: `#`
+        imgUrl: `img/thomas-a100.png`,
+        heading: `“Pandemin gav mig tid att satsa digitalt”`,
+        text: `Annika Höglund som driver företaget HighGrove har haft digitalisering i tankarna länge. Men det var först när pandemin slog till – och det rejält i hennes resebransch – som hon själv slog till digitalt.`,
+        url: `https://www.almi.se/kunskapsbanken/inspiration/highgrove/`
     },
     {
         id: 2,
-        imgUrl: `img/frank.png`,
-        heading: `Art-Heading 3`,
-        text: `Article text for the Third of the four articles. Three three three three`,
-        url: `#`
+        imgUrl: `img/noemi-a100.png`,
+        heading: `“Almis rådgivare har varit som en kurator”`,
+        text: `Malin Bergman Solming har gjort en personlig utvecklingsresa under sina vd-år för InfraGeoTech. När hon och Jonas Everstig grundade bolaget 2014 var hon ofta ute på jobb - idag med 22 anställda vill hon mest se efter teamet.`,
+        url: `https://www.almi.se/kunskapsbanken/inspiration/infrageotech/`
     },
     {
         id: 3,
-        imgUrl: `img/thomas.png`,
-        heading: `Art-Heading 4`,
-        text: `Article text for the fourth of the four articles. Four four four four`,
-        url: `#`
+        imgUrl: `img/steph-a100.png`,
+        heading: `“De hade en av de bättre affärsplaner jag sett”`,
+        text: `Eva-Lena Kron jobbar som rådgivare på Almi. Hon ger här tips om du och ditt företag behöver medel till utveckling eller en satsning.`,
+        url: `https://www.almi.se/kunskapsbanken/inspiration/sunda-byggvaror/almi-om-sunda-byggvaror/`
     }
 ];
 
 let currentArticle = 0;
+const articleOptionEls = document.querySelectorAll('.opt');
 
 document.querySelector('#experience .art-wrapper article').innerHTML = `
     
         <div class="d-flex justify-content-start align-items-center">
-            <img src="${articleList[0].imgUrl}" alt="">
+            <div class="avatar-holder">
+                <img src="${articleList[0].imgUrl}" alt="">
+            </div>
             <h3>${articleList[0].heading}</h3>
         </div>
 
@@ -90,12 +93,17 @@ document.querySelector('#experience .art-wrapper article').innerHTML = `
 `;
 
 btnPrevArticlesEl.addEventListener('click', () => {
+
     if (currentArticle > 0) {
+        articleOptionEls[currentArticle].classList.remove('opt-selected');
         currentArticle--;
+        articleOptionEls[currentArticle].classList.add('opt-selected');
         document.querySelector('#experience .art-wrapper article').innerHTML = `
         
             <div class="d-flex justify-content-start align-items-center">
-                <img src="${articleList[currentArticle].imgUrl}" alt="">
+                <div class="avatar-holder">
+                    <img src="${articleList[currentArticle].imgUrl}" alt="">
+                </div>
                 <h3>${articleList[currentArticle].heading}</h3>
             </div>
 
@@ -109,13 +117,17 @@ btnPrevArticlesEl.addEventListener('click', () => {
 });
 
 btnNextArticlesEl.addEventListener('click', () => {
-    console.log(currentArticle);
+    
     if (currentArticle < 3) {
+        articleOptionEls[currentArticle].classList.remove('opt-selected');
         currentArticle++;
+        articleOptionEls[currentArticle].classList.add('opt-selected');
         document.querySelector('#experience .art-wrapper article').innerHTML = `
         
             <div class="d-flex justify-content-start align-items-center">
-                <img src="${articleList[currentArticle].imgUrl}" alt="">
+                <div class="avatar-holder">
+                    <img src="${articleList[currentArticle].imgUrl}" alt="">
+                </div>
                 <h3>${articleList[currentArticle].heading}</h3>
             </div>
 
