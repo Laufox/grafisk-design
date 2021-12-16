@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Almi företagslån</title>
 
+    <!-- Import Sofia pro font -->
     <link rel="stylesheet" href="https://use.typekit.net/szw5lci.css">
 
     <!-- Bootstrap -->
@@ -14,15 +15,20 @@
     <!-- Import the font-awesome icons -->
     <script src="https://kit.fontawesome.com/83df8d4c67.js" crossorigin="anonymous"></script>
 
+    <!-- Link to local stylesheet -->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
     <header class="d-flex justify-content-center">
         <div class="header-wrapper d-flex justify-content-between align-items-center">
-            <img id="logo" src="img/almi-logo1-02.svg" alt="">
 
-            <img id="hamburger" src="img/menu-bars-02.svg" alt="">
+            <a class="d-flex" href="#">
+                <img id="logo" src="img/almi-logo-c-02.svg" alt="">
+            </a>
+
+            <i id="hamburger" class="fas fa-bars"></i>
+            <i class="fas fa-times btn-close-menu d-none"></i>
 
             <nav id="navbar" class="d-none">
 
@@ -56,7 +62,7 @@
                 
             </nav>
 
-            </div>
+        </div>
         
     </header>
 
@@ -74,17 +80,30 @@
 
         <section id="explain">
 
-            <div class="header-container d-flex justify-content-between align-items-center">
-                <h2>Hur funkar det?</h2>
-                <img class="d-none" src="img/arrow-down-02.svg" alt="">
-            </div>
+            <h2>Hur funkar det?</h2>
             
             <p>Våra exporter analyserar ert företags möjligheter och behov. Processen sker i samarbete med er bank för att kunna ge er en skräddarsydd och säker lösning!</p>
-            <a class="more-info" href="#">+ Mer information om processen</a>
+            <a class="more-info-explain" href="#">+ Mer information om processen</a>
 
             <div class="lightbox-wrapper">
                 <div class="lightbox">
+
+                    <div class="d-flex justify-content-end p-2">
+                        <i class="far fa-times-circle close-lb-ex"></i>
+                    </div>
+
+                    <h3>Mer om hur vi jobbar</h3>
+
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, odit? Perferendis sint fugit quos autem. Dolores quaerat molestias, necessitatibus velit, tenetur harum sit consectetur, aliquid tempore placeat inventore sint magnam.</p>
+
+                    <ul>
+                        <li>Lorem ipsum dolor sit amet</li>
+                        <li>Lorem ipsum dolor sit amet</li>
+                        <li>Lorem ipsum dolor sit amet</li>
+                    </ul>
+
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, odit? Perferendis sint fugit quos autem. Dolores quaerat molestias, necessitatibus velit, tenetur harum sit consectetur, aliquid tempore placeat inventore sint magnam.</p>
+
                 </div>
             </div>
 
@@ -103,13 +122,29 @@
 
         <section id="experience">
 
-            <div class="header-container d-flex justify-content-between align-items-center">
-                <h2>Vad har vi för erfarenhet?</h2> 
-                <img class="d-none" src="img/arrow-down-02.svg" alt="">
-            </div>
+                <h2>Vad har vi för erfarenhet?</h2>
             
             <p>Vi är ett statligt ägt företag som under nära 30 års tid har hjälpt hundratals nystartade företag att få en hållbar och framgångsrik struktur</p>
-            <a href="#">+ Läs mer om vår historia</a>
+            <a class="more-info-experience" href="#">+ Läs mer om vår historia</a>
+
+            <div class="lightbox-wrapper">
+                <div class="lightbox">
+
+                    <div class="d-flex justify-content-end p-2">
+                        <i class="far fa-times-circle close-lb-experience"></i>
+                    </div>
+
+                    <h3>Om oss och vår historia</h3>
+
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, odit? Perferendis sint fugit quos autem. Dolores quaerat molestias, necessitatibus velit, tenetur harum sit consectetur, aliquid tempore placeat inventore sint magnam.</p>
+
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, odit? Perferendis sint fugit quos autem. Dolores quaerat molestias, necessitatibus velit, tenetur harum sit consectetur, aliquid tempore placeat inventore sint magnam.</p>
+
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, odit? Perferendis sint fugit quos autem. Dolores quaerat molestias, necessitatibus velit, tenetur harum sit consectetur, aliquid tempore placeat inventore sint magnam.</p>
+
+                </div>
+            </div>
+
             <p>Reportage om några av våra tidigare investeringar: </p>
 
             <div class="art-wrapper">
@@ -125,7 +160,7 @@
                     
                     <p>Johanna Vesterberg från Luleå brinner för miljön. När hon som, möbel- och textildesigner, ville satsa på något eget var valet enkelt: -Jag mår dåligt av de stora företagens slit och släng. 100 miljoner ton möbler slängs varje år. Nu har vi tagit fram en skandinavisk möbel i helt nytt koncept.</p>
                     
-                    <a href="https://www.almi.se/kunskapsbanken/inspiration/normada/">+ Läs hela artiklen</a>
+                    <a href="https://www.almi.se/kunskapsbanken/inspiration/normada/" target="_blank">+ Läs hela artiklen</a>
                 </article>
                 
             </div>
@@ -154,7 +189,7 @@
                     
                     <p>Johanna Vesterberg från Luleå brinner för miljön. När hon som, möbel- och textildesigner, ville satsa på något eget var valet enkelt: - Jag mår dåligt av de stora företagens slit och släng. 100 miljoner ton möbler slängs varje år. Nu har vi tagit fram en skandinavisk möbel i helt nytt koncept.</p>
                     
-                    <a href="https://www.almi.se/kunskapsbanken/inspiration/normada/">+ Läs hela artiklen</a>
+                    <a href="https://www.almi.se/kunskapsbanken/inspiration/normada/" target="_blank">+ Läs hela artiklen</a>
                 </article>
 
                 <article>
@@ -163,12 +198,12 @@
                             <img src="img/thomas-a100.png" alt="">
                         </div>
                         
-                        <h3>““Pandemin gav mig tid att satsa digitalt””</h3>
+                        <h3>“Pandemin gav mig tid att satsa digitalt”</h3>
                     </div>
                     
                     <p>Annika Höglund som driver företaget HighGrove har haft digitalisering i tankarna länge. Men det var först när pandemin slog till - och det rejält i hennes resebransch - som hon själv slog till digitalt</p>
                     
-                    <a href="https://www.almi.se/kunskapsbanken/inspiration/highgrove/">+ Läs hela artiklen</a>
+                    <a href="https://www.almi.se/kunskapsbanken/inspiration/highgrove/" target="_blank">+ Läs hela artiklen</a>
                 </article>
                 
             </div>
@@ -185,11 +220,8 @@
         </section>
 
         <section id="offers">
-
-            <div class="header-container d-flex justify-content-between align-items-center">
-                <h2>Vilka lån erbjuder vi?</h2>
-                <img class="d-none" src="img/arrow-down-02.svg" alt="">
-            </div>
+    
+            <h2>Vilka lån erbjuder vi?</h2>
             
             <ul>
                 <li>5% fast ränta på alla lån</li>
@@ -198,6 +230,7 @@
             </ul>
 
             <div class="loan-offer-container">
+
                 <article class="loan-offer">
                     
                     <div class="d-flex justify-content-start align-items-center">
@@ -242,33 +275,23 @@
         </section>
 
         <section id="news">
-
-            <div class="header-container d-flex justify-content-between align-items-center">
-                <h2>Fortfarande osäker?</h2>
-                <img class="d-none" src="img/arrow-down-02.svg" alt="">
-            </div>
+            
+            <h2>Fortfarande osäker?</h2>
             
             <p>Känner du att du är osäker på vad som passar just ert företag? Behöver ni mer information och rådgivning från våra experter?</p>
 
             <p>Registrera ett konto för fri tillgång till våra magasin, Poddar och möjlighet till samtal med våra exporter för att lära känna oss bättre!</p>
-            
-            <!-- <div class="d-flex justify-content-between">
-                <button class="btn btn-primary">Skapa konto</button>
-                <img class="point-img" src="img/m-point-left.png" alt="">
-            </div> -->
-            
-            <!-- FORM to create acount -->
 
             <div class="form-wrapper">
                 <img class="form-img-right" src="img/w-point-right.png" alt="">
                 <form>
                     <div class="mb-3">
                       <label for="email" class="form-label">Email:</label>
-                      <input type="email" class="form-control" id="email">
+                      <input type="email" class="form-control" id="email" required>
                     </div>
                     <div class="mb-3">
                       <label for="name" class="form-label">Namn:</label>
-                      <input type="text" class="form-control" id="name">
+                      <input type="text" class="form-control" id="name" required>
                     </div>
                     
                     <button type="submit" class="btn btn-primary">Skapa konto</button>
@@ -281,19 +304,21 @@
 
     <footer class="d-flex justify-content-center align-items-center">
         
-        <div>
+        <a href="#">
             <i class="fab fa-facebook"></i>
-        </div>
-        <div>
+        </a>
+        <a href="#">
             <i class="fab fa-twitter"></i>
-        </div>
-        <div>
+        </a>
+        <a href="#">
             <i class="fab fa-instagram"></i>
-        </div>    
+        </a>    
         
     </footer>
 
+    <!-- Link to bootstrap javascript modules -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <!-- Link to local javascript file -->
     <script src="script.js"></script>
 </body>
 </html>
