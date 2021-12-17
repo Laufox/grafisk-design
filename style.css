@@ -205,6 +205,10 @@ section {
     margin-top: 1rem;
 }
 
+.explain-graphics-wrapper > img {
+    display: none;
+}
+
 .explain-graphics {
     width: 100%;
     max-width: 400px;
@@ -616,6 +620,7 @@ footer a {
     }
 
     .explain-graphics-wrapper > img {
+        display: block;
         width: 50%;
         height: 490px;
     }
